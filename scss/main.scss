@@ -1,0 +1,117 @@
+*,*::after,*::before {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+h1,h2 {
+    font-weight: normal;
+}
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    padding: 0 45px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    &__logo {
+        text-transform: uppercase;
+        color: #6d7278;
+    }
+    &__visit {
+        color: #6d7278;
+    }
+    &__availability {
+        color: #8a7c5d;
+        i {
+            margin-right: 5px;
+            position: relative;
+            top: 2px;
+        }
+    }
+    span {
+        margin-right: 15px;
+    }
+}
+.description {
+    padding: 0 45px;
+    h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+        width: 450px;
+    }
+}
+.main {
+    margin-top: 30px;
+    background-color: #142536;
+    color: #fff;
+    &__tabs {
+        .tab {
+            font-size: 22px;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 45px;
+            i {
+                svg {
+                    cursor: pointer;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+        .tab-1 {
+            border-bottom: 1px solid #405265;
+        } 
+        .tab-2 {
+            border-bottom: 1px solid #405265;
+            border-top: 1px solid #405265;
+        } 
+    }
+    &__content {
+        display: flex;
+        padding: 0 45px;
+        justify-content: space-between;
+        display: none;
+  
+        &.active {
+            display: flex;
+        }
+    }
+    .content-1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img {
+            position: relative;
+            left: -93px;
+        }
+        &__text {
+            max-width: 700px;
+            font-size: 18px;
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .content-2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        img {
+            position: relative;
+            left: -93px;
+        }
+        &__text {
+            max-width: 700px;
+            font-size: 18px;
+
+        }
+    }
+}

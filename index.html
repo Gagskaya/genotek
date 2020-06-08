@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Genotek</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="header__logo">
+                genotek
+            </span>
+            <span class="header__visit">неделю назад</span>
+            <span class="header__availability">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#8A7C5D"
+                            d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                </i>
+                доступно только мне
+            </span>
+        </header>
+        <section class="description">
+            <h1>Подарочный набор для сдачи ДНК-теста доставлен</h1>
+            <p>Спасибо, что выбрали Genotek! На упаковке вы найдете подробную инструкцию как сдать ДНК-тест.</p>
+        </section>
+        <div class="main">
+            <img src="./img/img.png" alt="подарок">
+            <div class="main__tabs">
+                <div class="tab-1 tab">
+                    <p>Как подарить набор другу, чтобы он создал свой личный кабинет?</p>
+                    <i class="btn-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                            <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2"
+                                d="M1691 794L1698.304 800 1705 794" transform="translate(-1690 -793)" />
+                        </svg>
+                    </i>
+                </div>
+                    <div class="main__content content-1">
+                        <div class="content-1__text">
+                            <p>Все просто! На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен
+                                стираемой полосой.</p>
+                            <p>Человеку, который получил ДНК-тест в подарок, нужно ввести временный логин и пароль на странице
+                                входа
+                                в личный кабинет lk.genotek.ru. После этого ему будет предложено зарегистрироваться или указать
+                                данные уже зарегистрированного пользователя, ввести номер пробирки и вызвать курьера для
+                                доставки
+                                биоматериала в лабораторию. </p>
+                            <p>Обратите внимание, что по умолчанию вы не получите доступ к результатам ДНК-теста того, кому вы
+                                подарили тест. Но вы можете попросить вашего близкого поделиться с вами результатами в его
+                                настройках профиля.</p>
+                        </div>
+                        <img src="./img/dnk-test.png" alt="днк тест">
+                    </div>
+                <div class="tab-2 tab">
+                    <p>Хочу активировать ДНК-тест в этом личном кабинете</p>
+                    <i class="btn-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9">
+                            <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-width="2"
+                                d="M1691 794L1698.304 800 1705 794" transform="translate(-1690 -793)" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="main__content content-2">
+                    <div class="content-2__text">
+                  <p>На подарочной упаковке ДНК-теста указан временный логин и пароль, который защищен стираемой полосой. Пожалуйста, введите их ниже. После ввода временных данных, вы сможете ввести номер пробирки и вызвать курьера для доставки биоматериала в лабораторию. </p>
+                    </div>
+                    <img src="./img/dnk-test.png" alt="днк тест">
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+          $('.btn-1').click(() => {
+        $(".content-1").toggleClass("active");
+    });
+          $('.btn-2').click(() => {
+        $(".content-2").toggleClass("active");
+    });
+    </script>
+</body>
+
+</html>
